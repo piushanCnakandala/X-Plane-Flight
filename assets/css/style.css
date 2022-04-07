@@ -3,3 +3,51 @@
     width: 100%;
     margin: 0;
 }
+
+#scoreBoard {     /*set scoreboard */
+    position: absolute;
+    height: 761px;
+    width: 450px;
+    top: 90px;
+    bottom: 0px;
+    right: 71px;
+    left: 154px;
+    border-radius: 16px;
+}
+#title{
+    color: white;
+    position: absolute;
+    top: 188px;
+    bottom: 0px;
+    left: 273px;
+    right: 30px;
+}
+#txtYourScore{
+    color: white;
+    position: absolute;
+    top: 600px;
+    bottom: 0px;
+    left: 182px;
+    right: 30px;
+}
+#txtHighScore{
+    color: white;
+    position: absolute;
+    top: 700px;
+    bottom: 0px;
+    left: 182px;
+    right: 30px;
+}
+#inputYourScore{
+    position: absolute;
+    top: 614px;
+    bottom: 273px;
+    left: 373px;
+}
+#inputHighScore{
+    position: absolute;
+    top: 718px;
+    bottom: 170px;
+    left: 373px;
+}
+
