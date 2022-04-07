@@ -51,3 +51,12 @@
     left: 373px;
 }
 
+
+#gameBoard{   /* set game board*/
+    background: black;
+    position: absolute;
+    height: 833px;
+    width: 1101px;
+    left: 723px;
+    top: 45px;
+}
