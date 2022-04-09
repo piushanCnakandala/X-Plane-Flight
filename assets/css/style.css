@@ -61,6 +61,13 @@
     top: 45px;
 }
 
+#gameLine{
+    color: #0a58ca;
+    height: 8px;
+    position: relative;
+    top: 551px;
+}
+
 #playerPlaneImg{
     height: 92px;
     bottom: 14px;
