@@ -60,3 +60,10 @@
     left: 723px;
     top: 45px;
 }
+
+#playerPlaneImg{
+    height: 92px;
+    bottom: 14px;
+    position: absolute;
+    left: 485px;
+}
