@@ -68,9 +68,32 @@
     top: 551px;
 }
 
-#playerPlaneImg{
+#playerPlane{
     height: 92px;
     bottom: 14px;
     position: absolute;
     left: 485px;
+}
+
+#attackedPlane1{
+    height: 101px;
+    width: 96px;
+    position: absolute;
+}
+
+#attackedPlane2{
+    height: 101px;
+    width: 96px;
+    position: absolute;
+}
+
+#attackedPlane3{
+    height: 101px;
+    width: 96px;
+    position: absolute;
+}
+#attackedPlane4{
+    height: 101px;
+    width: 96px;
+    position: absolute;
 }
