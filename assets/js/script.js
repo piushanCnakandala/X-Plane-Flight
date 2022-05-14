@@ -1,6 +1,7 @@
 $(function (){
 
-    //saving dom objects to variables
+    // dom objects to variables
+
     var gameBoard = $('#gameBoard');
     var playerPlane = $('#playerPlane');
     var attackedPlane1 =$('#attackedPlane1');
@@ -13,12 +14,19 @@ $(function (){
     var speed = 2;
     var move_right = false;
     var move_left = false;
-    var move_up = false;
-    var move_down = false;
+
+
+    var gameBoard_left = parseInt(gameBoard.css('left'));
+    var gameBoard_width = parseInt(gameBoard.width());
+    var gameBoard_height = parseInt(gameBoard.height());
+    var playerPlane_width = parseInt(playerPlane.width());
+    var playerPlane_height = parseInt(playerPlane.height());
 
 
 
+                  /////////////////////////////////////////////////////////////////////
 
+         /*  player plane moved (left,right)*/
 
     $(document).on('keydown', function (e) {
         if (game_over === false) {
@@ -48,6 +56,13 @@ $(function (){
         if (game_over === false && parseInt(playerPlane.css('left')) > 0) {
             playerPlane.css('left', parseInt(playerPlane.css('left')) - 5);
             move_left = requestAnimationFrame(left);
+        }
+    }
+
+    function right() {
+        if (game_over === false && parseInt(playerPlane.css('left')) < gameBoard_width-playerPlane_width) {
+            playerPlane.css('left', parseInt(playerPlane.css('left')) + 5);
+            move_right = requestAnimationFrame(right);
         }
     }
 
