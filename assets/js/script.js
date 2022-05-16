@@ -81,16 +81,6 @@ $(function (){
             return;
         }
 
-        score_counter++;
-
-        /*if (score_counter % 20 == 0) {
-            score.text(parseInt(score.text()) + 1);
-        }
-        if (score_counter % 500 == 0) {
-            speed++;
-            line_speed++;
-        }*/
-
         attackedPlane_down(attackedPlane1);
         attackedPlane_down(attackedPlane2);
         attackedPlane_down(attackedPlane3);
@@ -99,6 +89,11 @@ $(function (){
 
         anim_id = requestAnimationFrame(repeat);
     }
+
+    ////////////////////////////////////////////////////////////////////////////////
+
+
+
 
     function attackedPlane_down(AttackedPlane) {
         var car_current_top = parseInt(AttackedPlane.css('top'));
@@ -126,15 +121,6 @@ $(function (){
         restart_btn.focus();
         setHighScore();
     }
-
-    /*function setHighScore() {
-        if (high_score < parseInt(score.text())) {
-            high_score = parseInt(score.text());
-            localStorage.setItem('high_score', parseInt(score.text()));
-        }
-        $('#high_score').text(high_score);
-    }*/
-
 
     function collision($div1, $div2) {
         var x1 = $div1.offset().left;
