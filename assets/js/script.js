@@ -10,6 +10,8 @@ $(function (){
     var attackedPlane3 =$('#attackedPlane3');
     var attackedPlane4 =$('#attackedPlane4');
     var gameLine =$('#gameLine')
+    var restart_div = $('#restart_div');
+    var restart_btn = $('#restart');
 
     var game_over = false;
     var score_counter = 1;
@@ -84,14 +86,14 @@ $(function (){
         attackedPlane_down(attackedPlane1);
         attackedPlane_down(attackedPlane2);
         attackedPlane_down(attackedPlane3);
-        attackedPlane_down(attackedPlane3);
+        attackedPlane_down(attackedPlane4);
 
 
         anim_id = requestAnimationFrame(repeat);
     }
 
     ////////////////////////////////////////////////////////////////////////////////
-
+                    /*other method*/
 
 
 
@@ -106,9 +108,9 @@ $(function (){
     }
 
 
-  /*  restart_btn.click(function() {
+    restart_btn.click(function() {
         location.reload();
-    });*/
+    });
 
     function stop_the_game() {
         game_over = true;
@@ -119,7 +121,6 @@ $(function (){
         cancelAnimationFrame(move_down);
         restart_div.slideDown();
         restart_btn.focus();
-        setHighScore();
     }
 
     function collision($div1, $div2) {

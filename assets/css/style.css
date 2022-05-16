@@ -76,23 +76,30 @@
 }
 
 #attackedPlane1{
+    top: 0;
     height: 101px;
     width: 96px;
     position: absolute;
+    right: 50px;
 }
 
 #attackedPlane2{
+    top: 0;
     height: 101px;
     width: 96px;
     position: absolute;
+
 }
 
 #attackedPlane3{
+    top: 0;
     height: 101px;
     width: 96px;
     position: absolute;
+
 }
 #attackedPlane4{
+    top: 0;
     height: 101px;
     width: 96px;
     position: absolute;
