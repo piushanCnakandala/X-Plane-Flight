@@ -105,6 +105,13 @@
     position: absolute;
 }
 
+#fire{
+    bottom: 14px;
+    position: absolute;
+    left: 485px;
+    display: none;
+}
+
 #restart_div {
     position: absolute;
     height: 100%;
